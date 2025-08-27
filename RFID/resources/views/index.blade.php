@@ -222,7 +222,7 @@
     <div class="header">
         <div class="header-logo-container">
             <img src="https://edukasyon-production.s3.amazonaws.com/uploads/school/avatar/1790/bc.jpg" alt="Benedicto College Logo" class="header-logo">
-            <div class="college-name">BENEDICTO<br>COLLEGE</div>
+            <div class="college-name">BENEDICTO<br></div>
         </div>
     </div>
     
