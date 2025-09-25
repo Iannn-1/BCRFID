@@ -1,0 +1,172 @@
+
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    overflow-x: hidden;
+    }
+
+    /* Header */
+    .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0d2a5c;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1000;
+    }
+    .header .college-name {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 1.2;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+        }
+    .menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    }
+    .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    .header-logo-container {
+    display: flex;
+    align-items: center;
+    }
+    .header-logo {
+    height: 40px;
+    margin-right: 15px;
+    }
+    .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    .header-right .logout-btn {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+    }
+    .header-right .logout-btn:hover {
+    background: #d32f2f;
+    }
+
+    /* Sidebar */
+    .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: #0a1d37;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px; /* below header */
+    transition: left 0.3s ease;
+    z-index: 999;
+    }
+    .sidebar.active {
+    left: 0;
+    }
+    .sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    }
+    .sidebar a:hover {
+    background: #1e3a70;
+    }
+
+    /* User section (moved up) */
+    .sidebar .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #102b55;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .sidebar .user strong {
+    font-size: 15px;
+    }
+    .logout-btn {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+    }
+    .logout-btn:hover {
+    background: #d32f2f;
+    }
+
+    /* Main content */
+    .main {
+    padding: 80px 20px 20px;
+    transition: margin-left 0.3s ease;
+    }
+    .main.shifted {
+    margin-left: 250px;
+    }
+
+    /* Stats */
+    .stats {
+    margin: 20px 0;
+    }
+    .stat-box {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    }
+    .blue { background: #b3e5fc; }
+    .yellow { background: #fff9c4; }
+    .pink { background: #f8bbd0; }
+    .green { background: #c8e6c9; }
+
+    /* Table */
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    }
+    table th {
+    background: #f57c00;
+    color: white;
+    }
+    table tr:hover {
+    background: #f9f9f9;
+    }
